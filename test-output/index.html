@@ -1,0 +1,456 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-MyFirstSuite">
+              <span class="suite-name border-failed">MyFirstSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-MyFirstSuite">
+                    <span>E:\Eclipse\Avactis\src\test\java\TestNGConfig.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-MyFirstSuite">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-MyFirstSuite">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-MyFirstSuite">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-MyFirstSuite">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-MyFirstSuite">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-MyFirstSuite">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-MyFirstSuite" class="hide-methods failed suite-MyFirstSuite"> (hide)</a> <!-- hide-methods failed suite-MyFirstSuite -->
+                      <a href="#" panel-name="suite-MyFirstSuite" class="show-methods failed suite-MyFirstSuite"> (show)</a> <!-- show-methods failed suite-MyFirstSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-MyFirstSuite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Admin.AdminLoginTest" hash-for-method="AvactisAdminLogin">AvactisAdminLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-MyFirstSuite -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-MyFirstSuite" class="hide-methods passed suite-MyFirstSuite"> (hide)</a> <!-- hide-methods passed suite-MyFirstSuite -->
+                      <a href="#" panel-name="suite-MyFirstSuite" class="show-methods passed suite-MyFirstSuite"> (show)</a> <!-- show-methods passed suite-MyFirstSuite -->
+                    </span>
+                    <div class="method-list-content passed suite-MyFirstSuite">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.ProductSelectTest" hash-for-method="ProductSelectTest12(//a[text()=&#039;Sport&#039;], null, //form[@id=&quot;ProductForm_133&quot;]/div[3]/input, Brunton Eclipse Compass)">ProductSelectTest12(//a[text()='Sport'], null, //form[@id="ProductForm_133"]/div[3]/input, Brunton Eclipse Compass)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.ProductSelectTest" hash-for-method="ProductSelectTest12(//a[text()=&#039;Apparel&#039;], //form[@id=&quot;ProductForm_36&quot;]/a[2], //input[@value=&#039;Add To Cart&#039;], Avactis T-S...)">ProductSelectTest12(//a[text()='Apparel'], //form[@id="ProductForm_36"]/a[2], //input[@value='Add To Cart'], Avactis T-S...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.ProductSelectTest" hash-for-method="ProductSelectTest12(//a[text()=&#039;Furniture&#039;], null, //form[@id=&quot;ProductForm_139&quot;]/div[3]/input, EKTORP TULLSTA Chair)">ProductSelectTest12(//a[text()='Furniture'], null, //form[@id="ProductForm_139"]/div[3]/input, EKTORP TULLSTA Chair)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.RegisterToStoreTest" hash-for-method="Register">Register</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.ProductSelectTest" hash-for-method="UserDetails(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bh...)">UserDetails(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bh...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-MyFirstSuite" title="Store.ProductSelectTest" hash-for-method="selectedAddToCart">selectedAddToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-MyFirstSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-MyFirstSuite" class="panel MyFirstSuite">
+          <div class="suite-MyFirstSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">Admin.AdminLoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="AvactisAdminLogin">
+                  </a> <!-- AvactisAdminLogin -->
+                  <span class="method-name">AvactisAdminLogin</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchSessionException: Session ID is null. Using WebDriver after calling quit()?
+Build info: version: &apos;3.141.59&apos;, revision: &apos;e82be7d358&apos;, time: &apos;2018-11-14T08:17:03&apos;
+System info: host: &apos;ADMIN-PC&apos;, ip: &apos;192.168.43.65&apos;, os.name: &apos;Windows 7&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;6.1&apos;, java.version: &apos;1.8.0_151&apos;
+Driver info: driver.version: RemoteWebDriver
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:125)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:69)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:38)
+	at com.sun.proxy.$Proxy12.getText(Unknown Source)
+	at StoreJava.productSelectPO.Senddata1(productSelectPO.java:285)
+	at Admin.Login.AdminLogin(Login.java:57)
+	at Admin.AdminLoginTest.AvactisAdminLogin(AdminLoginTest.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(Invalid Login Scenario with wrong username and password.)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuite-class-failed -->
+          <div class="suite-MyFirstSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Store.ProductSelectTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductSelectTest12(//a[text()=&#039;Sport&#039;], null, //form[@id=&quot;ProductForm_133&quot;]/div[3]/input, Brunton Eclipse Compass)">
+                  </a> <!-- ProductSelectTest12(//a[text()='Sport'], null, //form[@id="ProductForm_133"]/div[3]/input, Brunton Eclipse Compass) -->
+                  <span class="method-name">ProductSelectTest12</span>
+                  <span class="parameters">(//a[text()='Sport'], null, //form[@id="ProductForm_133"]/div[3]/input, Brunton Eclipse Compass)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductSelectTest12(//a[text()=&#039;Apparel&#039;], //form[@id=&quot;ProductForm_36&quot;]/a[2], //input[@value=&#039;Add To Cart&#039;], Avactis T-S...)">
+                  </a> <!-- ProductSelectTest12(//a[text()='Apparel'], //form[@id="ProductForm_36"]/a[2], //input[@value='Add To Cart'], Avactis T-S...) -->
+                  <span class="method-name">ProductSelectTest12</span>
+                  <span class="parameters">(//a[text()='Apparel'], //form[@id="ProductForm_36"]/a[2], //input[@value='Add To Cart'], Avactis T-Shirt
+Size: S)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="ProductSelectTest12(//a[text()=&#039;Furniture&#039;], null, //form[@id=&quot;ProductForm_139&quot;]/div[3]/input, EKTORP TULLSTA Chair)">
+                  </a> <!-- ProductSelectTest12(//a[text()='Furniture'], null, //form[@id="ProductForm_139"]/div[3]/input, EKTORP TULLSTA Chair) -->
+                  <span class="method-name">ProductSelectTest12</span>
+                  <span class="parameters">(//a[text()='Furniture'], null, //form[@id="ProductForm_139"]/div[3]/input, EKTORP TULLSTA Chair)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="UserDetails(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bh...)">
+                  </a> <!-- UserDetails(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bh...) -->
+                  <span class="method-name">UserDetails</span>
+                  <span class="parameters">(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bhosari, 7756876655, GUEST)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectedAddToCart">
+                  </a> <!-- selectedAddToCart -->
+                  <span class="method-name">selectedAddToCart</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuite-class-passed -->
+          <div class="suite-MyFirstSuite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">Store.RegisterToStoreTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="Register">
+                  </a> <!-- Register -->
+                  <span class="method-name">Register</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-MyFirstSuite-class-passed -->
+        </div> <!-- panel MyFirstSuite -->
+        <div panel-name="test-xml-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">E:\Eclipse\Avactis\src\test\java\TestNGConfig.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;MyFirstSuite&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
+    &lt;parameter name=&quot;browser&quot; value=&quot;chrome&quot;/&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;Store.RegisterToStoreTest&quot;/&gt;
+      &lt;class name=&quot;Store.ProductSelectTest&quot;/&gt;
+      &lt;class name=&quot;Admin.AdminLoginTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Test --&gt;
+&lt;/suite&gt; &lt;!-- MyFirstSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for MyFirstSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Test (3 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for MyFirstSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for MyFirstSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_MyFirstSuite');
+function tableData_MyFirstSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(7);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'selectedAddToCart')
+data.setCell(0, 2, 'Store.ProductSelectTest')
+data.setCell(0, 3, 40721);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'AvactisAdminLogin')
+data.setCell(1, 2, 'Admin.AdminLoginTest')
+data.setCell(1, 3, 35038);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'Register')
+data.setCell(2, 2, 'Store.RegisterToStoreTest')
+data.setCell(2, 3, 13565);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'ProductSelectTest12')
+data.setCell(3, 2, 'Store.ProductSelectTest')
+data.setCell(3, 3, 10083);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'ProductSelectTest12')
+data.setCell(4, 2, 'Store.ProductSelectTest')
+data.setCell(4, 3, 7202);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'ProductSelectTest12')
+data.setCell(5, 2, 'Store.ProductSelectTest')
+data.setCell(5, 3, 5748);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'UserDetails')
+data.setCell(6, 2, 'Store.ProductSelectTest')
+data.setCell(6, 3, 10);
+window.suiteTableData['MyFirstSuite']= { tableData: data, tableDiv: 'times-div-MyFirstSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-MyFirstSuite">
+              </div> <!-- times-div-MyFirstSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for MyFirstSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-MyFirstSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">Admin.AdminLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Store.ProductSelectTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">5214 ms</span>
+              </div> <!-- configuration-test before -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Store.RegisterToStoreTest</div> <!-- chronological-class-name -->
+              <div class="configuration-test before">
+                <span class="method-name">setup(chrome)</span>
+                <span class="method-start">14147 ms</span>
+              </div> <!-- configuration-test before -->
+              <div class="configuration-class before">
+                <span class="method-name">before</span>
+                <span class="method-start">26822 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">Register</span>
+                <span class="method-start">47715 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">62897 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Store.ProductSelectTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">before</span>
+                <span class="method-start">62897 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">ProductSelectTest12(//a[text()='Sport'], null, //form[@id="ProductForm_133"]/div[3]/input, Brunton Eclipse Compass)</span>
+                <span class="method-start">70566 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductSelectTest12(//a[text()='Furniture'], null, //form[@id="ProductForm_139"]/div[3]/input, EKTORP TULLSTA Chair)</span>
+                <span class="method-start">76321 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">ProductSelectTest12(//a[text()='Apparel'], //form[@id="ProductForm_36"]/a[2], //input[@value='Add To Cart'], Avactis T-S...)</span>
+                <span class="method-start">83533 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">UserDetails(vijaya, chavan, vijayachavan03@gmail.com, India, 411039, Maharashtra, Pune, shri krishna society, bh...)</span>
+                <span class="method-start">93921 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">selectedAddToCart</span>
+                <span class="method-start">93931 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">134652 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">Admin.AdminLoginTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeMethod</span>
+                <span class="method-start">135322 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">AvactisAdminLogin</span>
+                <span class="method-start">139943 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterMethod</span>
+                <span class="method-start">175131 ms</span>
+              </div> <!-- configuration-class after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>
